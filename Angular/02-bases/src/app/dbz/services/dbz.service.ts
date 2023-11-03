@@ -12,7 +12,7 @@ export class DbzService {
     { id: uuid(), name: 'Vegeta', power: 8500 },
   ];
 
-  newCharacter(character: Character): void {
+  addCharacter(character: Character): void {
     const newCharacter: Character = { id: uuid(), ...character };
     this.characters.push(newCharacter);
   }
